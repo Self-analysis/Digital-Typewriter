@@ -1,0 +1,9 @@
+# Digital Typewriter - متطلبات Python
+# تثبيت باستخدام: pip install -r requirements.txt
+
+# GTK 4 و PyGObject
+pygobject==3.44.1
+# أو أحدث إصدار متوافق مع Fedora 44
+
+# للملاحظة: الحزم التالية تحتاج لتثبيتها عبر مدير الحزم:
+# sudo dnf install python3-gobject gtk4 libadwaita

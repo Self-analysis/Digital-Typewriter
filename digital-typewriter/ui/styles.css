@@ -1,0 +1,150 @@
+/* Digital Typewriter - Styles */
+
+window {
+    background-color: #f5efe8;
+}
+
+/* إطار محرر النص - يشبه ورقة الآلة الكاتبة */
+.editor-frame {
+    border: 3px solid #d4c8b8;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 5px;
+}
+
+.editor-frame textview {
+    padding: 20px;
+    font-family: "Cairo", "DejaVu Sans", "FreeSans", sans-serif;
+    font-size: 16px;
+    background-color: #fcfcf9;
+    border-radius: 8px;
+}
+
+/* المفاتيح الرئيسية */
+button.key {
+    min-height: 48px;
+    min-width: 40px;
+    border: 1px solid #c8bdb0;
+    border-radius: 6px;
+    background-color: #f8f5f0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c2c2c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: all 0.1s ease;
+    padding: 4px 6px;
+}
+
+button.key:hover {
+    background-color: #f0ebe4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    border-color: #b8a898;
+}
+
+button.key:active {
+    background-color: #e8e0d8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    transform: translateY(1px);
+}
+
+/* المفاتيح الخاصة */
+button.key-special {
+    background-color: #e8e0d8;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4a4a4a;
+    min-height: 48px;
+    min-width: 50px;
+}
+
+button.key-special:hover {
+    background-color: #ddd4ca;
+}
+
+/* مفتاح المسافة */
+button.key-space {
+    min-width: 200px;
+    background-color: #f0ebe4;
+    border: 1px solid #c8bdb0;
+}
+
+/* مفتاح تبديل اللغة */
+button.key-lang {
+    background-color: #4a6fa5;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 48px;
+    min-width: 80px;
+    border: 1px solid #3a5f8a;
+}
+
+button.key-lang:hover {
+    background-color: #3a5f8a;
+}
+
+button.key-lang:active {
+    background-color: #2a4f7a;
+}
+
+/* مفتاح CapsLock نشط */
+button.key-active {
+    background-color: #4a8a5c;
+    color: #ffffff;
+    border-color: #3a7a4c;
+}
+
+/* الأزرار في الرأس */
+button.suggested-action {
+    background-color: #4a8a5c;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+button.suggested-action:hover {
+    background-color: #3a7a4c;
+}
+
+button.destructive-action {
+    background-color: #c0392b;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+button.destructive-action:hover {
+    background-color: #a83226;
+}
+
+/* مربع الحوار */
+dialog {
+    background-color: #f5efe8;
+    border-radius: 10px;
+}
+
+dialog button {
+    min-height: 35px;
+    padding: 6px 16px;
+    border-radius: 6px;
+}
+
+/* نصوص العنوان */
+.title-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+/* تنسيق TextView داخل المحرر */
+textview {
+    font-family: "Cairo", "DejaVu Sans", "FreeSans", sans-serif;
+    font-size: 16px;
+    background-color: #fcfcf9;
+    color: #2c2c2c;
+}

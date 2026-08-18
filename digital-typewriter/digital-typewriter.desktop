@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Digital Typewriter
+Name[ar]=الآلة الكاتبة الرقمية
+Comment=آلة كاتبة رقمية مستقلة تدعم العربية والإنجليزية
+Comment[ar]=آلة كاتبة رقمية مستقلة تدعم العربية والإنجليزية
+Exec=/usr/bin/python3 /home/simo/.local/share/digital-typewriter/main.py
+Icon=/home/simo/.local/share/digital-typewriter/assets/icon.svg
+Terminal=false
+Categories=Office;Utility;TextEditor;
+Keywords=typewriter;keyboard;arabic;english;
+StartupWMClass=digital-typewriter
+StartupNotify=true

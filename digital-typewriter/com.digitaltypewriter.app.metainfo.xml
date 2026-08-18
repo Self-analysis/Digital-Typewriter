@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.digitaltypewriter.app</id>
+  
+  <name>Digital Typewriter</name>
+  <name xml:lang="ar">الآلة الكاتبة الرقمية</name>
+
+  <summary>آلة كاتبة رقمية مستقلة تدعم العربية والإنجليزية</summary>
+  <summary xml:lang="ar">آلة كاتبة رقمية مستقلة تدعم العربية والإنجليزية</summary>
+
+  <description>
+    <p>تطبيق آلة كاتبة رقمية مستقل يتيح لك الكتابة باللغتين العربية والإنجليزية باستخدام لوحة مفاتيح رقمية مدمجة أو لوحة المفاتيح الفيزيائية.</p>
+    <p>يتميز بواجهة مستوحاة من الآلة الكاتبة الكلاسيكية، مع دعم كامل لاتجاه النص RTL للغة العربية.</p>
+  </description>
+
+  <launchable type="desktop-id">digital-typewriter.desktop</launchable>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <developer id="com.digitaltypewriter">
+    <name>Your Name</name>
+  </developer>
+
+  <keywords>
+    <keyword>typewriter</keyword>
+    <keyword>keyboard</keyword>
+    <keyword>arabic</keyword>
+    <keyword>english</keyword>
+  </keywords>
+
+  <icon type="stock">digital-typewriter</icon>
+</component>
