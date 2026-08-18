@@ -4,6 +4,7 @@ Release:        1%{?dist}
 Summary:        Digital typewriter with UK English and Arabic keyboard
 License:        MIT
 URL:            https://github.com/Self-analysis/Digital-Typewriter
+Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 Requires:       python3
@@ -17,6 +18,7 @@ Requires:       appstream
 Standalone GTK digital typewriter with a built-in UK English and Arabic keyboard and a multi-line text editor.
 
 %prep
+%setup -q
 
 %build
 
@@ -28,7 +30,7 @@ install -d %{buildroot}%{_datadir}/metainfo
 install -d %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
 install -d %{buildroot}%{_bindir}
 
-cp -a ../digital-typewriter/* %{buildroot}%{_datadir}/digital-typewriter/
+cp -a ./* %{buildroot}%{_datadir}/digital-typewriter/
 rm -rf %{buildroot}%{_datadir}/digital-typewriter/rpm
 install -m 0644 %{buildroot}%{_datadir}/digital-typewriter/digital-typewriter.desktop %{buildroot}%{_datadir}/applications/com.digitaltypewriter.app.desktop
 install -m 0644 %{buildroot}%{_datadir}/digital-typewriter/com.digitaltypewriter.app.metainfo.xml %{buildroot}%{_datadir}/metainfo/com.digitaltypewriter.app.metainfo.xml
@@ -37,7 +39,6 @@ ln -s %{_datadir}/digital-typewriter/main.py %{buildroot}%{_bindir}/digital-type
 
 %check
 python3 -m py_compile %{buildroot}%{_datadir}/digital-typewriter/*.py
-
 desktop-file-validate %{buildroot}%{_datadir}/applications/com.digitaltypewriter.app.desktop
 
 %files
