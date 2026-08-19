@@ -14,7 +14,7 @@ jobs:
     container: fedora:44
     steps:
       - name: Install build tools
-        run: dnf install -y git rpm-build rpmdevtools tar gzip findutils python3
+        run: dnf install -y git rpm-build rpmdevtools tar gzip findutils python3 desktop-file-utils
 
       - name: Checkout
         uses: actions/checkout@v4
