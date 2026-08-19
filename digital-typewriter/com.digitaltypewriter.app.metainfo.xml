@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>com.digitaltypewriter.app</id>
-  
   <name>Digital Typewriter</name>
   <name xml:lang="ar">الآلة الكاتبة الرقمية</name>
-
-  <summary>آلة كاتبة رقمية مستقلة تدعم العربية والإنجليزية</summary>
-  <summary xml:lang="ar">آلة كاتبة رقمية مستقلة تدعم العربية والإنجليزية</summary>
-
+  <summary>Digital typewriter with UK English and Arabic keyboard</summary>
+  <summary xml:lang="ar">آلة كاتبة رقمية تدعم الإنجليزية البريطانية والعربية</summary>
   <description>
-    <p>تطبيق آلة كاتبة رقمية مستقل يتيح لك الكتابة باللغتين العربية والإنجليزية باستخدام لوحة مفاتيح رقمية مدمجة أو لوحة المفاتيح الفيزيائية.</p>
-    <p>يتميز بواجهة مستوحاة من الآلة الكاتبة الكلاسيكية، مع دعم كامل لاتجاه النص RTL للغة العربية.</p>
+    <p>A standalone digital typewriter with a built-in keyboard and a multi-line text editor.</p>
+    <p>Supports UK English and Arabic, including right-to-left Arabic text, mouse-driven on-screen typing, physical keyboard input, copy and clear actions.</p>
+    <p xml:lang="ar">تطبيق آلة كاتبة رقمية مستقل يحتوي على لوحة مفاتيح مدمجة ومحرر نص متعدد الأسطر.</p>
+    <p xml:lang="ar">يدعم الإنجليزية البريطانية والعربية، واتجاه النص من اليمين إلى اليسار، والكتابة بالماوس، ولوحة المفاتيح الفيزيائية، والنسخ والمسح.</p>
   </description>
-
-  <launchable type="desktop-id">digital-typewriter.desktop</launchable>
-
+  <launchable type="desktop-id">com.digitaltypewriter.app.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
-
   <developer id="com.digitaltypewriter">
-    <name>Your Name</name>
+    <name>Self-analysis</name>
   </developer>
-
+  <provides>
+    <binary>digital-typewriter</binary>
+  </provides>
   <keywords>
     <keyword>typewriter</keyword>
     <keyword>keyboard</keyword>
     <keyword>arabic</keyword>
     <keyword>english</keyword>
+    <keyword>writing</keyword>
   </keywords>
-
-  <icon type="stock">digital-typewriter</icon>
+  <content_rating type="oars-1.1"/>
 </component>
